@@ -3,7 +3,7 @@ body{
 }
 #info{
     display:inline-block;
-    width:1000px;
+    width:1500px;
 }
 #dex{
     display:inline-block;
@@ -12,4 +12,7 @@ body{
     border:color red 2px;
     vertical-align: top;
     margin-top:200px;
+}
+h1, h2{
+    text-align:center
 }
