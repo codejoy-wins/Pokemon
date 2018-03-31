@@ -1,9 +1,11 @@
 $(document).ready(function(){
-    
-    for (var i=1;i<110;i++){
+
+    for (var i=1;i<710;i++){
         $('#info').append("<img id ="+i+" src='https://pokeapi.co/media/img/"+i+".png'>")    
     }
     $('img').click(function(){
+        
+        $('#dex').append($(this))
         console.log($(this).attr("id"))
         var id = $(this).attr("id");
 
@@ -15,11 +17,11 @@ $(document).ready(function(){
                 html_str += "<li>" + res.types[i].type.name + "</li>";
             }
             html_str += "</ul>"
-            $("#dex").html(html_str);
+            $("#dex").append(html_str);
     
         },"json");
         
-        // $('#dex').append($(this))
+        
         
     })
 })
